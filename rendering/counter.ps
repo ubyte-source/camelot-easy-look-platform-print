@@ -1,0 +1,12 @@
+globaldict /counter 1 put
+<<
+    /EndPage {
+        exch pop 0 eq dup {
+            /Helvetica 8 selectfont counter 256 string cvs dup stringwidth pop currentpagedevice
+            /PageSize get 0 get exch sub 24
+            sub 24 moveto
+            show globaldict
+            /counter counter 1 add put
+        } if
+    } bind
+>> setpagedevice

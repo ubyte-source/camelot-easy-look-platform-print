@@ -1,0 +1,49 @@
+ {
+	"name": "energia-europa/energia-europa-chrome",
+	"type": "project",
+	"description": "Energia Europa e-chrome",
+	"keywords": [
+		"ubyte",
+		"energia europa",
+		"e-chrome"
+	],
+	"homepage": "https://source.cloud.google.com/energia-cloud-core/energia-europa-chrome",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Paolo Fabris",
+			"email": "support@ubyte.it",
+			"homepage": "https://www.ubyte.it/",
+			"role": "Developer"
+		},
+		{
+			"name": "Gabriele Luigi Masero",
+			"email": "support@ubyte.it",
+			"homepage": "https://www.ubyte.it/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=7.2",
+		"ext-mbstring": "*",
+		"ext-zip": "*",
+		"knight/armor": "3.2.2",
+		"knight/artifact-iam": "2.6.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"applications\\": "applications/",
+			"configurations\\": "configurations/"
+		}
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/energia-source/knight-armor"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/energia-source/knight-artifact-iam"
+		}
+	]
+}
