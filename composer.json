@@ -1,13 +1,13 @@
  {
-	"name": "energia-europa/energia-europa-chrome",
+	"name": "energia-source/camelot-easy-look-platform-print",
 	"type": "project",
-	"description": "Energia Europa e-chrome",
+	"description": "Camelot - Easy Look Platform Print",
 	"keywords": [
 		"ubyte",
 		"energia europa",
-		"e-chrome"
+		"camelot easy look platform print"
 	],
-	"homepage": "https://source.cloud.google.com/energia-cloud-core/energia-europa-chrome",
+	"homepage": "https://github.com/energia-source/camelot-easy-look-platform-print",
 	"license": "MIT",
 	"authors": [
 		{
