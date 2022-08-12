@@ -38,7 +38,7 @@ $parameters = array_filter($parameters, 'strlen');
 $parameters = array_values($parameters);
 $parameters = array_slice($uri, 1 + Navigator::getDepth());
 
-$client = Navigator::getClientIP(Navigator::HTTP_X_OVERRIDE_IP_ENABLE);
+$client = Navigator::getClientIP();
 $client = long2ip($client);
 if (!!filter_var($client, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 | FILTER_FLAG_NO_PRIV_RANGE)) {
     $application_basename = IAMConfiguration::getApplicationBasename();
