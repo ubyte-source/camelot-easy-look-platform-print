@@ -28,7 +28,7 @@
 		"ext-mbstring": "*",
 		"ext-zip": "*",
 		"knight/armor": "3.2.2",
-		"knight/artifact-iam": "2.6.0"
+		"knight/artifact-iam": "2.6.1"
 	},
 	"autoload": {
 		"psr-4": {
