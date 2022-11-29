@@ -40,7 +40,7 @@ render () {
 pages=$($PDFINFO "$PDF" | sed -nre 's/^Pages: +([0-9]+)$/\1/p')
 for ((i=1; i <= $pages; i++)) ; do
     $PDFTOTEXT -f $i -l $i -layout "$PDF" - | while read -r line; do
-        if [[ $line =~ ^([0-9]+\.?)+\.[[:space:]] ]]; then
+        if [[ $line =~ ^([0-9]+\.?)+\.[[:space:]] ]] ; then
             echo "[/Page $i /View [/XYZ null null null] /Title ($line) /OUT pdfmark" >> $BOOKMARKS
         fi
     done

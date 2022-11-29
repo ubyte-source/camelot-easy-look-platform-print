@@ -27,8 +27,8 @@
 		"php": ">=7.2",
 		"ext-mbstring": "*",
 		"ext-zip": "*",
-		"knight/armor": "3.2.2",
-		"knight/artifact-iam": "2.6.1"
+		"knight/armor": "3.3.0",
+		"knight/artifact-iam": "2.7.1"
 	},
 	"autoload": {
 		"psr-4": {
